@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         container.appendChild(heart);
 
         const randomPosition = Math.random() * 100;
-        heart.style.left = randomePosition + 'vw';
+        heart.style.left = randomPosition + 'vw';
 
         setTimeout(() => {
             heart.remove();
