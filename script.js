@@ -4,12 +4,14 @@ document.addEventListener('DOMContentLoaded', function() {
     function createHeart() {
         const heart = document.createElement('div');
         heart.classList.add('heart');
-        heart.style.left = Math.random() * 100 + 'vw';
         container.appendChild(heart);
 
-        heart.addEventListener('animationed', function() {
+        const randomPosition = Math.random() * 100;
+        heart.style.left = randomePosition + 'vw';
+
+        setTimeout(() => {
             heart.remove();
-        });
+        }, 5000);
     }
 
     setInterval(createHeart, 500);
